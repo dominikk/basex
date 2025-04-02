@@ -4,7 +4,7 @@ import java.io.*;
 import java.time.*;
 
 import org.basex.http.*;
-import org.eclipse.jetty.websocket.server.*;
+import org.eclipse.jetty.ee8.websocket.server.*;
 
 import jakarta.servlet.*;
 

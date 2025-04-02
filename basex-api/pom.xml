@@ -12,7 +12,7 @@
   </parent>
 
   <properties>
-    <jettyVersion>11.0.24</jettyVersion>
+    <jettyVersion>12.0.18</jettyVersion>
   </properties>
 
   <name>BaseX API</name>
@@ -34,22 +34,44 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-server</artifactId>
+      <version>${jettyVersion}</version>
     </dependency>
     <dependency>
-      <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-servlet</artifactId>
+      <groupId>org.eclipse.jetty.ee8</groupId>
+      <artifactId>jetty-ee8-servlet</artifactId>
+      <version>${jettyVersion}</version>
     </dependency>
     <dependency>
-      <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-servlets</artifactId>
+      <groupId>org.eclipse.jetty.ee8</groupId>
+      <artifactId>jetty-ee8-servlets</artifactId>
+      <version>${jettyVersion}</version>
     </dependency>
     <dependency>
-      <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-webapp</artifactId>
+      <groupId>org.eclipse.jetty.ee8</groupId>
+      <artifactId>jetty-ee8-webapp</artifactId>
+      <version>${jettyVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty.websocket</groupId>
-      <artifactId>websocket-jetty-server</artifactId>
+      <artifactId>jetty-websocket-jetty-server</artifactId>
+      <version>${jettyVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.jetty.ee8.websocket</groupId>
+      <artifactId>jetty-ee8-websocket-jetty-server</artifactId>
+      <version>${jettyVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>5.0.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.websocket</groupId>
+      <artifactId>jakarta.websocket-api</artifactId>
+      <version>2.0.0</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.ettrema</groupId>
@@ -98,7 +120,7 @@
       </plugin>
       <plugin>
         <groupId>org.eclipse.jetty</groupId>
-        <artifactId>jetty-maven-plugin</artifactId>
+        <artifactId>jetty-ee8-maven-plugin</artifactId>
         <version>${jettyVersion}</version>
         <configuration>
           <jettyXmls>${basedir}/src/main/webapp/WEB-INF/jetty.xml</jettyXmls>

@@ -19,8 +19,8 @@ import org.basex.util.*;
 import org.basex.util.http.*;
 import org.basex.util.list.*;
 import org.basex.util.log.*;
-import org.eclipse.jetty.websocket.api.*;
-import org.eclipse.jetty.websocket.api.exceptions.*;
+import org.eclipse.jetty.ee8.websocket.api.*;
+import org.eclipse.jetty.ee8.websocket.api.exceptions.*;
 
 /**
  * This class defines an abstract WebSocket. It inherits the Jetty WebSocket adapter.
