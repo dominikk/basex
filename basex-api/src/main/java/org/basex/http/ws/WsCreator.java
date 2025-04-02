@@ -1,6 +1,6 @@
 package org.basex.http.ws;
 
-import org.eclipse.jetty.websocket.server.*;
+import org.eclipse.jetty.ee8.websocket.server.*;
 
 /**
  * Custom WebSocket creator.

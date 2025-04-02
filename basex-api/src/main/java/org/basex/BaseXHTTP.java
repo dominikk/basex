@@ -17,8 +17,8 @@ import org.eclipse.jetty.http.*;
 import org.eclipse.jetty.server.*;
 import org.eclipse.jetty.server.handler.gzip.*;
 import org.eclipse.jetty.util.resource.*;
-import org.eclipse.jetty.webapp.*;
-import org.eclipse.jetty.websocket.server.config.*;
+import org.eclipse.jetty.ee8.webapp.*;
+import org.eclipse.jetty.ee8.websocket.server.config.*;
 import org.eclipse.jetty.xml.*;
 
 /**
